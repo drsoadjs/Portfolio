@@ -62,6 +62,7 @@
     color: var(--text-color);
     font-weight: 600;
     cursor: default;
+    width: 18rem;
   }
 
   .navbar a{
@@ -96,10 +97,11 @@
   }
 
   .home-img{
-    width: 50rem;
-    border: #0ef solid 2rem; 
-    box-shadow: 0 0 2rem var(--main-color);
-    border-radius: 5rem;  
+    width: 70rem;
+    /* border: #0ef solid 2rem;  */
+    box-shadow: 0 0 2rem var(--second-bg-color);
+    border-radius: 5rem;   
+
   }
 
   .home-img{
@@ -109,16 +111,23 @@
   @keyframes floatImage {
     0%{
       transform: translateY(0);
+      box-shadow: none;
     }
 
     50%{
       transform: translateY(-4.4%);
+      box-shadow: 0 2rem 2rem var(--main-color);
     }    
 
     100%{
       transform: translateY(0);
+      box-shadow: none;
     }
   }
+
+  .home-img img{
+   background-blend-mode: luminosity;
+   }
 
   .home-content h3{
     font-size: 3.2rem;
@@ -166,11 +175,11 @@
 
   .btn{
     display: inline-block;
-    border-radius: 4rem;    
-    box-shadow: inset 0 0 2rem var(--main-color);
+    border-radius: 4rem;
+    background: var(--main-color);
     padding: 1rem 2.8rem;
     font-size: 1.6rem;
-    color: var(--text-color);
+    color: var(--bg-color);
     letter-spacing: .1rem;
     font-weight: 600;
     transition: all .5s ease-in-out;
@@ -263,6 +272,22 @@
     color: var(--text-color);
     margin-bottom: 1.5rem;
 } 
+
+.stacks{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.st{
+  border-radius: 4rem;    
+  box-shadow: inset 0 0 2rem var(--main-color);
+  padding: 1rem 2.8rem;
+  font-size: 1.6rem;
+  color: var(--text-color);
+  letter-spacing: .1rem;
+  font-weight: 600;
+}
 
 /* -----------PORTFOLIO PROJECTS DESIGN----------------------------- */
 
@@ -383,7 +408,7 @@
 }
 
 .btn-contact{    
-    background: var(--bg-color);
+    /* background: var(--bg-color); */
     cursor: pointer;
 }
 
