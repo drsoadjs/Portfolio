@@ -46,7 +46,7 @@ menuIcon.addEventListener("click", menuIconOnClick);
 
 ScrollReveal({
   reset: true,
-  distance: "80px",
+  distance: "50px",
   duration: 2000,
   delay: 200,
 });
@@ -60,7 +60,7 @@ ScrollReveal().reveal(
 
 ScrollReveal().reveal(".home-content h1, .about-img", { origin: "left" });
 
-ScrollReveal().reveal(".home-content p, .about-content", { origin: "right" });
+// ScrollReveal().reveal(".home-content p, .about-content", { origin: "right" });
 
 // TYPED JS
 const typed = new Typed(".multiple-text", {
